@@ -16,5 +16,23 @@ namespace ProyectoFinal2
         {
             InitializeComponent();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Modulos mModulos = new Modulos();
+            mModulos.Show();
+
+        }
     }
 }
