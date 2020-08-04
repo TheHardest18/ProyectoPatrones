@@ -36,10 +36,10 @@
             // button1
             // 
             this.button1.AutoEllipsis = true;
-            this.button1.Location = new System.Drawing.Point(136, 117);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button1.Location = new System.Drawing.Point(240, 116);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(235, 75);
+            this.button1.Size = new System.Drawing.Size(176, 61);
             this.button1.TabIndex = 0;
             this.button1.Text = "y klk";
             this.button1.UseVisualStyleBackColor = true;
@@ -47,10 +47,9 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(136, 224);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button2.Location = new System.Drawing.Point(59, 111);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(235, 81);
+            this.button2.Size = new System.Drawing.Size(176, 66);
             this.button2.TabIndex = 1;
             this.button2.Text = "y klk";
             this.button2.UseVisualStyleBackColor = true;
@@ -58,22 +57,22 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(136, 349);
+            this.button3.Location = new System.Drawing.Point(68, 48);
+            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(235, 72);
+            this.button3.Size = new System.Drawing.Size(176, 58);
             this.button3.TabIndex = 2;
             this.button3.Text = "con klk y klk";
             this.button3.UseVisualStyleBackColor = true;
             // 
             // Modulos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(569, 528);
+            this.ClientSize = new System.Drawing.Size(427, 429);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Modulos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Modulos";
