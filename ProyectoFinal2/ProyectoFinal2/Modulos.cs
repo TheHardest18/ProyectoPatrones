@@ -24,12 +24,16 @@ namespace ProyectoFinal2
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            Learn mLearn = new Learn();
+            mLearn.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            Write mWrite = new Write();
+            mWrite.Show();
         }
     }
 }
