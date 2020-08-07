@@ -28,19 +28,28 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Modulos));
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.menuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exitToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.TxtValidacion = new System.Windows.Forms.Label();
+            this.contextMenuStrip1.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
             // 
             this.button1.AutoEllipsis = true;
-            this.button1.Location = new System.Drawing.Point(153, 81);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button1.Location = new System.Drawing.Point(115, 66);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(235, 75);
+            this.button1.Size = new System.Drawing.Size(176, 61);
             this.button1.TabIndex = 0;
             this.button1.Text = "Learn";
             this.button1.UseVisualStyleBackColor = true;
@@ -48,10 +57,9 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(153, 240);
-            this.button2.Margin = new System.Windows.Forms.Padding(4);
+            this.button2.Location = new System.Drawing.Point(115, 195);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(235, 81);
+            this.button2.Size = new System.Drawing.Size(176, 66);
             this.button2.TabIndex = 1;
             this.button2.Text = "Write";
             this.button2.UseVisualStyleBackColor = true;
@@ -59,36 +67,92 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(153, 418);
-            this.button4.Margin = new System.Windows.Forms.Padding(4);
+            this.button4.Location = new System.Drawing.Point(115, 340);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(235, 81);
+            this.button4.Size = new System.Drawing.Size(176, 66);
             this.button4.TabIndex = 3;
             this.button4.Text = "y klk";
             this.button4.UseVisualStyleBackColor = true;
             // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.exitToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(94, 26);
+            // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(93, 22);
+            this.exitToolStripMenuItem.Text = "Exit";
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menuToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(427, 24);
+            this.menuStrip1.TabIndex = 5;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // menuToolStripMenuItem
+            // 
+            this.menuToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.exitToolStripMenuItem1});
+            this.menuToolStripMenuItem.Name = "menuToolStripMenuItem";
+            this.menuToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
+            this.menuToolStripMenuItem.Text = "Menu";
+            // 
+            // exitToolStripMenuItem1
+            // 
+            this.exitToolStripMenuItem1.Name = "exitToolStripMenuItem1";
+            this.exitToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.exitToolStripMenuItem1.Text = "Exit";
+            // 
+            // TxtValidacion
+            // 
+            this.TxtValidacion.AutoSize = true;
+            this.TxtValidacion.Location = new System.Drawing.Point(415, 24);
+            this.TxtValidacion.Name = "TxtValidacion";
+            this.TxtValidacion.Size = new System.Drawing.Size(0, 13);
+            this.TxtValidacion.TabIndex = 7;
+            // 
             // Modulos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(569, 528);
+            this.ClientSize = new System.Drawing.Size(427, 429);
+            this.Controls.Add(this.TxtValidacion);
+            this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.IsMdiContainer = true;
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "Modulos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Modulos";
             this.Load += new System.EventHandler(this.Modulos_Load);
+            this.contextMenuStrip1.ResumeLayout(false);
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem menuToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem1;
+        public System.Windows.Forms.Label TxtValidacion;
+        public System.Windows.Forms.Button button1;
+        public System.Windows.Forms.Button button2;
     }
 }

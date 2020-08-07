@@ -87,6 +87,11 @@ namespace ProyectoFinal2
             this.Hide();
             Modulos objmodulos = Modulos.GetModulos();
             objmodulos.Show();
+            if (objmodulos.button1.Visible == false)
+            {
+                objmodulos.button1.Visible = true;
+                objmodulos.button2.Visible = true;
+            }
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)

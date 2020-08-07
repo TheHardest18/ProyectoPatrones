@@ -37,16 +37,25 @@ namespace ProyectoFinal2
         private void button1_Click(object sender, EventArgs e)
         {
             
-            this.Hide();
+            
             Learn mLearn = Learn.getInstancia();
+            mLearn.txtValidacion.Text = TxtValidacion.Text;
+            mLearn.MdiParent = this;
             mLearn.Show();
+
+            button1.Visible = false;
+            button2.Visible = false;
+
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            
             Write mWrite = Write.GetWrite();
+            mWrite.MdiParent = this;
             mWrite.Show();
+            button2.Visible = false;
+            button1.Visible = false;
         }
     }
 }
