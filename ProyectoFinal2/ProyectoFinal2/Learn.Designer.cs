@@ -53,7 +53,14 @@
             // 
             this.imgFotos.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imgFotos.ImageStream")));
             this.imgFotos.TransparentColor = System.Drawing.Color.Transparent;
-            this.imgFotos.Images.SetKeyName(0, "cola.JPG");
+            this.imgFotos.Images.SetKeyName(0, "bateries.JPG");
+            this.imgFotos.Images.SetKeyName(1, "camera.JPG");
+            this.imgFotos.Images.SetKeyName(2, "computer.JPG");
+            this.imgFotos.Images.SetKeyName(3, "computergame.JPG");
+            this.imgFotos.Images.SetKeyName(4, "headphones.JPG");
+            this.imgFotos.Images.SetKeyName(5, "internet.JPG");
+            this.imgFotos.Images.SetKeyName(6, "keyboard.JPG");
+            this.imgFotos.Images.SetKeyName(7, "webcam.JPG");
             // 
             // btnSiguiente
             // 
@@ -69,20 +76,40 @@
             // 
             this.imgFotos2.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imgFotos2.ImageStream")));
             this.imgFotos2.TransparentColor = System.Drawing.Color.Transparent;
-            this.imgFotos2.Images.SetKeyName(0, "cola.JPG");
-            this.imgFotos2.Images.SetKeyName(1, "cola2.jpg");
+            this.imgFotos2.Images.SetKeyName(0, "batteries2.JPG");
+            this.imgFotos2.Images.SetKeyName(1, "camera2.JPG");
+            this.imgFotos2.Images.SetKeyName(2, "computer2.JPG");
+            this.imgFotos2.Images.SetKeyName(3, "computergame2.JPG");
+            this.imgFotos2.Images.SetKeyName(4, "headphones2.JPG");
+            this.imgFotos2.Images.SetKeyName(5, "internet2.JPG");
+            this.imgFotos2.Images.SetKeyName(6, "keyboard2.JPG");
+            this.imgFotos2.Images.SetKeyName(7, "webcam2.JPG");
             // 
             // imgFotos3
             // 
             this.imgFotos3.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imgFotos3.ImageStream")));
             this.imgFotos3.TransparentColor = System.Drawing.Color.Transparent;
-            this.imgFotos3.Images.SetKeyName(0, "water.JPG");
+            this.imgFotos3.Images.SetKeyName(0, "microhone.JPG");
+            this.imgFotos3.Images.SetKeyName(1, "mobile.JPG");
+            this.imgFotos3.Images.SetKeyName(2, "mouse.JPG");
+            this.imgFotos3.Images.SetKeyName(3, "plug.JPG");
+            this.imgFotos3.Images.SetKeyName(4, "speakers.JPG");
+            this.imgFotos3.Images.SetKeyName(5, "switch.JPG");
+            this.imgFotos3.Images.SetKeyName(6, "tablet.JPG");
+            this.imgFotos3.Images.SetKeyName(7, "torch.JPG");
             // 
             // img4
             // 
             this.img4.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("img4.ImageStream")));
             this.img4.TransparentColor = System.Drawing.Color.Transparent;
-            this.img4.Images.SetKeyName(0, "water2.jpg");
+            this.img4.Images.SetKeyName(0, "microhone2.JPG");
+            this.img4.Images.SetKeyName(1, "mobile2.JPG");
+            this.img4.Images.SetKeyName(2, "mouse2.JPG");
+            this.img4.Images.SetKeyName(3, "plug2.JPG");
+            this.img4.Images.SetKeyName(4, "speakers2.JPG");
+            this.img4.Images.SetKeyName(5, "switch2.JPG");
+            this.img4.Images.SetKeyName(6, "tablet2.JPG");
+            this.img4.Images.SetKeyName(7, "torch2.JPG");
             // 
             // btnReproducir1
             // 
@@ -108,9 +135,9 @@
             // 
             this.listimg4.ImageIndex = 0;
             this.listimg4.ImageList = this.img4;
-            this.listimg4.Location = new System.Drawing.Point(309, 176);
+            this.listimg4.Location = new System.Drawing.Point(290, 173);
             this.listimg4.Name = "listimg4";
-            this.listimg4.Size = new System.Drawing.Size(90, 154);
+            this.listimg4.Size = new System.Drawing.Size(130, 154);
             this.listimg4.TabIndex = 7;
             // 
             // listimg3
@@ -124,11 +151,11 @@
             // 
             // listimg2
             // 
-            this.listimg2.ImageIndex = 1;
+            this.listimg2.ImageIndex = 0;
             this.listimg2.ImageList = this.imgFotos2;
-            this.listimg2.Location = new System.Drawing.Point(309, 9);
+            this.listimg2.Location = new System.Drawing.Point(300, 9);
             this.listimg2.Name = "listimg2";
-            this.listimg2.Size = new System.Drawing.Size(90, 154);
+            this.listimg2.Size = new System.Drawing.Size(106, 154);
             this.listimg2.TabIndex = 1;
             this.listimg2.Click += new System.EventHandler(this.label2_Click);
             // 
@@ -187,6 +214,7 @@
             this.btnModulos.TabIndex = 13;
             this.btnModulos.Text = "Modules";
             this.btnModulos.UseVisualStyleBackColor = true;
+            this.btnModulos.Click += new System.EventHandler(this.btnModulos_Click);
             // 
             // btnBack
             // 
@@ -196,6 +224,7 @@
             this.btnBack.TabIndex = 14;
             this.btnBack.Text = "Previous";
             this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // Learn
             // 
