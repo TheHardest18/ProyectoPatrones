@@ -53,10 +53,14 @@ namespace ProyectoFinal2
             
 
             indice++;
-            if (indice > 4)
+            if (indice == 4)
             {
-                indice = 0;
+                MessageBox.Show("end of the lesson");
+                button1.Enabled = false;
+                button3.Visible = true;
             }
+
+            
 
             label1.ImageIndex = indice;
             label2.ImageIndex = indice;
@@ -78,8 +82,8 @@ namespace ProyectoFinal2
             { res3 = textBox2.Text; }
             if (indice == 3)
             { res4 = textBox2.Text; }
-            textBox1.Text = " ";
-            textBox2.Text = " ";
+            textBox1.Text = "";
+            textBox2.Text = "";
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -97,6 +101,11 @@ namespace ProyectoFinal2
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }
