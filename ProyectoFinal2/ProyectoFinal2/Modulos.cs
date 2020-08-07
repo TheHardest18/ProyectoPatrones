@@ -12,10 +12,22 @@ namespace ProyectoFinal2
 {
     public partial class Modulos : Form
     {
-        public Modulos()
+        //Patron Singleton
+        private Modulos()
         {
             InitializeComponent();
         }
+        private static Modulos InsModulos = null;
+        public static Modulos GetModulos() 
+        {
+            if (InsModulos == null)
+            {
+                InsModulos = new Modulos();
+            }
+
+            return InsModulos;
+
+        }//fin
 
         private void Modulos_Load(object sender, EventArgs e)
         {
@@ -24,15 +36,16 @@ namespace ProyectoFinal2
 
         private void button1_Click(object sender, EventArgs e)
         {
+            
             this.Hide();
-            Learn mLearn = new Learn();
+            Learn mLearn = Learn.getInstancia();
             mLearn.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Write mWrite = new Write();
+            Write mWrite = Write.GetWrite();
             mWrite.Show();
         }
     }

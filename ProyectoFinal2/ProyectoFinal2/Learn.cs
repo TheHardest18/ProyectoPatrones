@@ -18,7 +18,8 @@ namespace ProyectoFinal2
         private int indice1;
         private int indice2;
         private int indice3;
-        public Learn()
+        //Inicio de patron singleton
+        private Learn()
         {
             InitializeComponent();
             indice = 0;
@@ -27,7 +28,17 @@ namespace ProyectoFinal2
             indice3 = 0;
             
         }
+        private static Learn Instancia = null;
+        public static Learn getInstancia()
+        {
+            if (Instancia == null)
+            {
+                Instancia = new Learn();
+            }
 
+            return Instancia;
+        }
+        //Finish patron singleton
         private void Learn_Load(object sender, EventArgs e)
         {
 
@@ -134,44 +145,44 @@ namespace ProyectoFinal2
         private void btnReproducir1_Click(object sender, EventArgs e)
         {
             try {
-                if (sonido == null && indice==0) 
+                if (sonido == null && indice==0 || sonido != null && indice == 0) 
                 {
                     audio1();
 
                 }
 
-                else if (sonido != null && indice1 == 1)
+                else if (sonido != null && indice1 == 1 || sonido == null && indice == 1)
                 {
                     //sonido.controls.stop();
                     audio3();
 
                 }
-                else if (sonido != null && indice == 2)
+                else if (sonido != null && indice == 2 || sonido == null && indice == 2)
                 {
                     audio5();
 
                 }
-                else if (sonido != null && indice == 3)
+                else if (sonido != null && indice == 3 || sonido == null && indice == 3)
                 {
                     audio7();
 
                 }
-                else if (sonido != null && indice == 4)
+                else if (sonido != null && indice == 4 || sonido == null && indice == 4)
                 {
                     audio9();
 
                 }
-                else if (sonido != null && indice == 5)
+                else if (sonido != null && indice == 5 || sonido == null && indice == 5)
                 {
                     audio11();
 
                 }
-                else if (sonido != null && indice == 6)
+                else if (sonido != null && indice == 6 || sonido == null && indice == 6)
                 {
                     audio13();
 
                 }
-                else if (sonido != null && indice == 7)
+                else if (sonido != null && indice == 7 || sonido == null && indice == 7)
                 {
                     audio15();
 
@@ -194,47 +205,42 @@ namespace ProyectoFinal2
         {
             try
             {
-                if (sonido != null && indice1 == 0)
+                if (sonido != null && indice1 == 0 || sonido == null && indice1==0)
                 {
                     audio2();
                 }
 
-                else if(sonido == null && indice1 == 0) 
-                {
-                    audio2();
-                }
-
-                else if (sonido != null && indice == 1)
+                else if (sonido != null && indice == 1|| sonido == null && indice == 1)
                 {
                     audio4();
 
                 }
-                else if (sonido != null && indice == 2)
+                else if (sonido != null && indice == 2 || sonido == null && indice == 2)
                 {
                     audio6();
 
                 }
-                else if (sonido != null && indice == 3)
+                else if (sonido != null && indice == 3 || sonido == null && indice == 3)
                 {
                     audio8();
 
                 }
-                else if (sonido != null && indice == 4)
+                else if (sonido != null && indice == 4 || sonido == null && indice == 4)
                 {
                     audio10();
 
                 }
-                else if (sonido != null && indice == 5)
+                else if (sonido != null && indice == 5 || sonido == null && indice == 5)
                 {
                     audio12();
 
                 }
-                else if (sonido != null && indice == 6)
+                else if (sonido != null && indice == 6 || sonido == null && indice == 6)
                 {
                     audio14();
 
                 }
-                else if (sonido != null && indice == 7)
+                else if (sonido != null && indice == 7 || sonido == null && indice == 7)
                 {
                     audio16();
 
@@ -312,7 +318,7 @@ namespace ProyectoFinal2
         private void btnModulos_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Modulos objmodulos = new Modulos();
+            Modulos objmodulos = Modulos.GetModulos();
             objmodulos.Show();
             
         }

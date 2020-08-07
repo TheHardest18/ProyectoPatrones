@@ -43,7 +43,7 @@ namespace ProyectoFinal2
         private void button1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Modulos mModulos = new Modulos();
+            Modulos mModulos = Modulos.GetModulos();
             mModulos.Show();
 
         }

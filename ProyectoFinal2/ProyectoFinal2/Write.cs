@@ -13,12 +13,22 @@ namespace ProyectoFinal2
     public partial class Write : Form
     {
         private int indice;
-   
-        public Write()
+   //Patron Singleton
+        private Write()
         {
             InitializeComponent();
             indice = 0;
         }
+        private static Write insWrite = null;
+        public static Write GetWrite() 
+        {
+            if (insWrite == null) 
+            {
+                insWrite = new Write();
+            }
+            return insWrite;
+        }//fin
+
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -38,7 +48,7 @@ namespace ProyectoFinal2
         private void button2_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Modulos objmodulos = new Modulos();
+            Modulos objmodulos = Modulos.GetModulos();
             objmodulos.Show();
         }
     }
