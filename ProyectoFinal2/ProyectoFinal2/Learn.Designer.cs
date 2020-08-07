@@ -47,6 +47,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.btnModulos = new System.Windows.Forms.Button();
             this.btnBack = new System.Windows.Forms.Button();
+            this.txtValidacion = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // imgFotos
@@ -157,7 +158,7 @@
             this.listimg2.Name = "listimg2";
             this.listimg2.Size = new System.Drawing.Size(106, 154);
             this.listimg2.TabIndex = 1;
-            this.listimg2.Click += new System.EventHandler(this.label2_Click);
+            this.listimg2.Click += new System.EventHandler(this.listimg2_Click);
             // 
             // btnReproducir2
             // 
@@ -226,11 +227,20 @@
             this.btnBack.UseVisualStyleBackColor = true;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
+            // txtValidacion
+            // 
+            this.txtValidacion.AutoSize = true;
+            this.txtValidacion.Location = new System.Drawing.Point(445, 9);
+            this.txtValidacion.Name = "txtValidacion";
+            this.txtValidacion.Size = new System.Drawing.Size(0, 13);
+            this.txtValidacion.TabIndex = 15;
+            // 
             // Learn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(457, 448);
+            this.Controls.Add(this.txtValidacion);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnModulos);
             this.Controls.Add(this.label2);
@@ -242,12 +252,14 @@
             this.Controls.Add(this.listimg3);
             this.Controls.Add(this.btnSiguiente);
             this.Controls.Add(this.listimg2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Learn";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Learn";
             this.Load += new System.EventHandler(this.Learn_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -270,5 +282,6 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btnModulos;
         private System.Windows.Forms.Button btnBack;
+        public System.Windows.Forms.Label txtValidacion;
     }
 }

@@ -39,22 +39,7 @@ namespace ProyectoFinal2
             return Instancia;
         }
         //Finish patron singleton
-        private void Learn_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-      
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
+        
         //SoundPlayer sonido;//wav
         WindowsMediaPlayer sonido;//mp3
         private void audio1() 
@@ -141,14 +126,15 @@ namespace ProyectoFinal2
             sonido.URL = @"https://storage.googleapis.com/nfree/torch1596764751.mp3";
             sonido.controls.play();
         }
-       
+        
+        
         private void btnReproducir1_Click(object sender, EventArgs e)
         {
+            
             try {
                 if (sonido == null && indice==0 || sonido != null && indice == 0) 
                 {
                     audio1();
-
                 }
 
                 else if (sonido != null && indice1 == 1 || sonido == null && indice == 1)
@@ -319,8 +305,25 @@ namespace ProyectoFinal2
         {
             this.Hide();
             Modulos objmodulos = Modulos.GetModulos();
+            if(objmodulos.button1.Visible == false) 
+            {
+                objmodulos.button1.Visible = true;
+                objmodulos.button2.Visible = true;
+            }
+            
+            
             objmodulos.Show();
             
+        }
+
+        private void Learn_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void listimg2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
