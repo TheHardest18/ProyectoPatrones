@@ -162,5 +162,9 @@
   <ItemGroup>
     <None Include="Resources\x.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Controller\" />
+    <Folder Include="Vista\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
