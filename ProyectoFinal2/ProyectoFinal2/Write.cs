@@ -54,7 +54,7 @@ namespace ProyectoFinal2
             
 
             indice++;
-            if (indice == 4)
+            if (indice == 8)
             {
                 MessageBox.Show("end of the lesson");
                 button1.Enabled = false;

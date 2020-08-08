@@ -32,13 +32,13 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Write));
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
             this.imageList2 = new System.Windows.Forms.ImageList(this.components);
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.button3 = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // textBox1
@@ -58,15 +58,10 @@
             this.imageList1.Images.SetKeyName(1, "mouse.JPG");
             this.imageList1.Images.SetKeyName(2, "headphones.JPG");
             this.imageList1.Images.SetKeyName(3, "keyboard.JPG");
-            // 
-            // label1
-            // 
-            this.label1.ImageIndex = 0;
-            this.label1.ImageList = this.imageList1;
-            this.label1.Location = new System.Drawing.Point(207, 16);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(200, 199);
-            this.label1.TabIndex = 2;
+            this.imageList1.Images.SetKeyName(4, "speakers.JPG");
+            this.imageList1.Images.SetKeyName(5, "switch.JPG");
+            this.imageList1.Images.SetKeyName(6, "torch.JPG");
+            this.imageList1.Images.SetKeyName(7, "webcam.JPG");
             // 
             // button1
             // 
@@ -81,23 +76,15 @@
             // 
             // button2
             // 
+            this.button2.BackColor = System.Drawing.Color.OrangeRed;
             this.button2.Location = new System.Drawing.Point(15, 9);
             this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(97, 30);
             this.button2.TabIndex = 4;
             this.button2.Text = "Modulos";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // label2
-            // 
-            this.label2.ImageIndex = 0;
-            this.label2.ImageList = this.imageList2;
-            this.label2.Location = new System.Drawing.Point(204, 265);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(200, 199);
-            this.label2.TabIndex = 6;
             // 
             // imageList2
             // 
@@ -106,7 +93,11 @@
             this.imageList2.Images.SetKeyName(0, "bateries.JPG");
             this.imageList2.Images.SetKeyName(1, "computer.JPG");
             this.imageList2.Images.SetKeyName(2, "tablet.JPG");
-            this.imageList2.Images.SetKeyName(3, "water.JPG");
+            this.imageList2.Images.SetKeyName(3, "camera.JPG");
+            this.imageList2.Images.SetKeyName(4, "computergame.JPG");
+            this.imageList2.Images.SetKeyName(5, "internet.JPG");
+            this.imageList2.Images.SetKeyName(6, "microhone.JPG");
+            this.imageList2.Images.SetKeyName(7, "plug.JPG");
             // 
             // textBox2
             // 
@@ -119,20 +110,43 @@
             // 
             // button3
             // 
+            this.button3.BackColor = System.Drawing.Color.OrangeRed;
             this.button3.Location = new System.Drawing.Point(487, 258);
             this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(97, 30);
             this.button3.TabIndex = 7;
             this.button3.Text = "answers";
-            this.button3.UseVisualStyleBackColor = true;
+            this.button3.UseVisualStyleBackColor = false;
             this.button3.Visible = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // label2
+            // 
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.ImageIndex = 0;
+            this.label2.ImageList = this.imageList2;
+            this.label2.Location = new System.Drawing.Point(204, 265);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(200, 199);
+            this.label2.TabIndex = 6;
+            // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.ImageIndex = 0;
+            this.label1.ImageList = this.imageList1;
+            this.label1.Location = new System.Drawing.Point(207, 16);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(200, 199);
+            this.label1.TabIndex = 2;
             // 
             // Write
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::ProyectoFinal2.Properties.Resources.fondo;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(609, 551);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.label2);

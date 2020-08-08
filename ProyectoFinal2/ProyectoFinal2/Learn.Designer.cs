@@ -65,12 +65,14 @@
             // 
             // btnSiguiente
             // 
-            this.btnSiguiente.Location = new System.Drawing.Point(324, 360);
+            this.btnSiguiente.BackColor = System.Drawing.Color.OrangeRed;
+            this.btnSiguiente.Location = new System.Drawing.Point(432, 443);
+            this.btnSiguiente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSiguiente.Name = "btnSiguiente";
-            this.btnSiguiente.Size = new System.Drawing.Size(82, 34);
+            this.btnSiguiente.Size = new System.Drawing.Size(109, 42);
             this.btnSiguiente.TabIndex = 5;
             this.btnSiguiente.Text = "Next";
-            this.btnSiguiente.UseVisualStyleBackColor = true;
+            this.btnSiguiente.UseVisualStyleBackColor = false;
             this.btnSiguiente.Click += new System.EventHandler(this.btnSiguiente_Click);
             // 
             // imgFotos2
@@ -114,78 +116,102 @@
             // 
             // btnReproducir1
             // 
+            this.btnReproducir1.BackColor = System.Drawing.Color.Transparent;
+            this.btnReproducir1.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btnReproducir1.Image = ((System.Drawing.Image)(resources.GetObject("btnReproducir1.Image")));
             this.btnReproducir1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReproducir1.Location = new System.Drawing.Point(183, 53);
+            this.btnReproducir1.Location = new System.Drawing.Point(244, 65);
+            this.btnReproducir1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnReproducir1.Name = "btnReproducir1";
-            this.btnReproducir1.Size = new System.Drawing.Size(78, 75);
+            this.btnReproducir1.Size = new System.Drawing.Size(104, 92);
             this.btnReproducir1.TabIndex = 9;
-            this.btnReproducir1.UseVisualStyleBackColor = true;
+            this.btnReproducir1.UseVisualStyleBackColor = false;
             this.btnReproducir1.Click += new System.EventHandler(this.btnReproducir1_Click);
             // 
             // listimg1
             // 
+            this.listimg1.BackColor = System.Drawing.Color.Transparent;
+            this.listimg1.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.listimg1.ImageIndex = 0;
             this.listimg1.ImageList = this.imgFotos;
-            this.listimg1.Location = new System.Drawing.Point(46, 9);
+            this.listimg1.Location = new System.Drawing.Point(61, 11);
+            this.listimg1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.listimg1.Name = "listimg1";
-            this.listimg1.Size = new System.Drawing.Size(90, 154);
+            this.listimg1.Size = new System.Drawing.Size(120, 190);
             this.listimg1.TabIndex = 8;
             // 
             // listimg4
             // 
+            this.listimg4.BackColor = System.Drawing.Color.Transparent;
+            this.listimg4.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.listimg4.ImageIndex = 0;
             this.listimg4.ImageList = this.img4;
-            this.listimg4.Location = new System.Drawing.Point(290, 173);
+            this.listimg4.Location = new System.Drawing.Point(387, 213);
+            this.listimg4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.listimg4.Name = "listimg4";
-            this.listimg4.Size = new System.Drawing.Size(130, 154);
+            this.listimg4.Size = new System.Drawing.Size(173, 190);
             this.listimg4.TabIndex = 7;
             // 
             // listimg3
             // 
+            this.listimg3.BackColor = System.Drawing.Color.Transparent;
+            this.listimg3.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.listimg3.ImageIndex = 0;
             this.listimg3.ImageList = this.imgFotos3;
-            this.listimg3.Location = new System.Drawing.Point(46, 176);
+            this.listimg3.Location = new System.Drawing.Point(61, 217);
+            this.listimg3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.listimg3.Name = "listimg3";
-            this.listimg3.Size = new System.Drawing.Size(90, 154);
+            this.listimg3.Size = new System.Drawing.Size(120, 190);
             this.listimg3.TabIndex = 6;
             // 
             // listimg2
             // 
+            this.listimg2.BackColor = System.Drawing.Color.Transparent;
+            this.listimg2.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.listimg2.ImageIndex = 0;
             this.listimg2.ImageList = this.imgFotos2;
-            this.listimg2.Location = new System.Drawing.Point(300, 9);
+            this.listimg2.Location = new System.Drawing.Point(400, 11);
+            this.listimg2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.listimg2.Name = "listimg2";
-            this.listimg2.Size = new System.Drawing.Size(106, 154);
+            this.listimg2.Size = new System.Drawing.Size(141, 190);
             this.listimg2.TabIndex = 1;
             this.listimg2.Click += new System.EventHandler(this.listimg2_Click);
             // 
             // btnReproducir2
             // 
+            this.btnReproducir2.BackColor = System.Drawing.Color.Transparent;
+            this.btnReproducir2.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btnReproducir2.Image = ((System.Drawing.Image)(resources.GetObject("btnReproducir2.Image")));
             this.btnReproducir2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReproducir2.Location = new System.Drawing.Point(183, 217);
+            this.btnReproducir2.Location = new System.Drawing.Point(244, 267);
+            this.btnReproducir2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnReproducir2.Name = "btnReproducir2";
-            this.btnReproducir2.Size = new System.Drawing.Size(78, 75);
+            this.btnReproducir2.Size = new System.Drawing.Size(104, 92);
             this.btnReproducir2.TabIndex = 10;
-            this.btnReproducir2.UseVisualStyleBackColor = true;
+            this.btnReproducir2.UseVisualStyleBackColor = false;
             this.btnReproducir2.Click += new System.EventHandler(this.btnReproducir2_Click);
             // 
             // label1
             // 
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(186, 131);
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label1.Location = new System.Drawing.Point(248, 161);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(75, 32);
+            this.label1.Size = new System.Drawing.Size(100, 39);
             this.label1.TabIndex = 11;
             this.label1.Text = "Listen";
             // 
             // label2
             // 
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(186, 295);
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label2.Location = new System.Drawing.Point(248, 363);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(75, 32);
+            this.label2.Size = new System.Drawing.Size(100, 39);
             this.label2.TabIndex = 12;
             this.label2.Text = "Listen";
             // 
@@ -209,37 +235,44 @@
             // 
             // btnModulos
             // 
-            this.btnModulos.Location = new System.Drawing.Point(183, 360);
+            this.btnModulos.BackColor = System.Drawing.Color.OrangeRed;
+            this.btnModulos.Location = new System.Drawing.Point(244, 443);
+            this.btnModulos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnModulos.Name = "btnModulos";
-            this.btnModulos.Size = new System.Drawing.Size(82, 34);
+            this.btnModulos.Size = new System.Drawing.Size(109, 42);
             this.btnModulos.TabIndex = 13;
             this.btnModulos.Text = "Modules";
-            this.btnModulos.UseVisualStyleBackColor = true;
+            this.btnModulos.UseVisualStyleBackColor = false;
             this.btnModulos.Click += new System.EventHandler(this.btnModulos_Click);
             // 
             // btnBack
             // 
-            this.btnBack.Location = new System.Drawing.Point(54, 360);
+            this.btnBack.BackColor = System.Drawing.Color.OrangeRed;
+            this.btnBack.Location = new System.Drawing.Point(72, 443);
+            this.btnBack.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(82, 34);
+            this.btnBack.Size = new System.Drawing.Size(109, 42);
             this.btnBack.TabIndex = 14;
             this.btnBack.Text = "Previous";
-            this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.UseVisualStyleBackColor = false;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // txtValidacion
             // 
             this.txtValidacion.AutoSize = true;
-            this.txtValidacion.Location = new System.Drawing.Point(445, 9);
+            this.txtValidacion.Location = new System.Drawing.Point(593, 11);
+            this.txtValidacion.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.txtValidacion.Name = "txtValidacion";
-            this.txtValidacion.Size = new System.Drawing.Size(0, 13);
+            this.txtValidacion.Size = new System.Drawing.Size(0, 17);
             this.txtValidacion.TabIndex = 15;
             // 
             // Learn
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(457, 448);
+            this.BackgroundImage = global::ProyectoFinal2.Properties.Resources.fondo;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(609, 551);
             this.Controls.Add(this.txtValidacion);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnModulos);
@@ -254,6 +287,7 @@
             this.Controls.Add(this.listimg2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Learn";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Learn";
