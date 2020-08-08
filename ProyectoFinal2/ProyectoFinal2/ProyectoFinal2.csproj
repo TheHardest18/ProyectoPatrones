@@ -163,7 +163,8 @@
     <None Include="Resources\x.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\fondo.jpg" />
+    <Folder Include="Controller\" />
+    <Folder Include="Vista\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
