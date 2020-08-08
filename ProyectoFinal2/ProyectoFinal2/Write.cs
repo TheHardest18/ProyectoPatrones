@@ -110,7 +110,15 @@ namespace ProyectoFinal2
 
         private void button3_Click(object sender, EventArgs e)
         {
-            
+            this.Hide();
+            nota nota1 = nota.getNota();
+            nota1.MdiParent = Modulos.ActiveForm;
+            nota1.Show();
+        }
+
+        private void Write_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
