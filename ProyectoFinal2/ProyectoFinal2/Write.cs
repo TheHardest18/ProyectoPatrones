@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -13,7 +14,7 @@ namespace ProyectoFinal2
     public partial class Write : Form
     {
         
-        public string res1;
+        public static string res1;
         public string res2;
         public string res3;
         public string res4;
@@ -57,6 +58,7 @@ namespace ProyectoFinal2
             {
                 MessageBox.Show("end of the lesson");
                 button1.Enabled = false;
+                button1.Visible = false;
                 button3.Visible = true;
             }
 
@@ -85,12 +87,14 @@ namespace ProyectoFinal2
             textBox1.Text = "";
             textBox2.Text = "";
         }
-
+        
+       
         private void button2_Click(object sender, EventArgs e)
         {
             this.Hide();
             Modulos objmodulos = Modulos.GetModulos();
             objmodulos.Show();
+
             if (objmodulos.button1.Visible == false)
             {
                 objmodulos.button1.Visible = true;
@@ -114,6 +118,7 @@ namespace ProyectoFinal2
             nota nota1 = nota.getNota();
             nota1.MdiParent = Modulos.ActiveForm;
             nota1.Show();
+          //  MessageBox.Show(res1.Tex);
         }
 
         private void Write_Load(object sender, EventArgs e)
