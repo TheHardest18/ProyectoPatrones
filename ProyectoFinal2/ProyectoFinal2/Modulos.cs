@@ -57,5 +57,10 @@ namespace ProyectoFinal2
             button2.Visible = false;
             button1.Visible = false;
         }
+
+        private void exitToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

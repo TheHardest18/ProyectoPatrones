@@ -24,7 +24,7 @@ namespace ProyectoFinal2
 
 
         };
-        IFirebaseClient client;
+        //IFirebaseClient client;
         public Form1()
         {
             InitializeComponent();

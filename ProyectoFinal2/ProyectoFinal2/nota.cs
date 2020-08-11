@@ -64,6 +64,8 @@ namespace ProyectoFinal2
         {
             this.Hide();
             Modulos objmodulos = Modulos.GetModulos();
+            objmodulos.button1.Visible = true;
+            objmodulos.button2.Visible = true;
             objmodulos.Show();
         }
 
