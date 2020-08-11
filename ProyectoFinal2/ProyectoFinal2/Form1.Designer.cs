@@ -39,10 +39,9 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label1.Location = new System.Drawing.Point(4, 83);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(3, 67);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(448, 88);
+            this.label1.Size = new System.Drawing.Size(336, 72);
             this.label1.TabIndex = 0;
             this.label1.Text = "Bienvenid@ a English Technological Assitant";
             this.label1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -54,10 +53,9 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label2.Location = new System.Drawing.Point(62, 214);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(46, 174);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(348, 29);
+            this.label2.Size = new System.Drawing.Size(272, 24);
             this.label2.TabIndex = 1;
             this.label2.Text = "Presione el boton para cotinuar";
             this.label2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -67,10 +65,9 @@
             // 
             this.button1.BackColor = System.Drawing.Color.OrangeRed;
             this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(133, 247);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
+            this.button1.Location = new System.Drawing.Point(98, 201);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(188, 38);
+            this.button1.Size = new System.Drawing.Size(141, 31);
             this.button1.TabIndex = 2;
             this.button1.Text = "Start Class";
             this.button1.UseVisualStyleBackColor = false;
@@ -78,16 +75,15 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::ProyectoFinal2.Properties.Resources.fondo;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(456, 528);
+            this.ClientSize = new System.Drawing.Size(342, 429);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "English Assistant";
