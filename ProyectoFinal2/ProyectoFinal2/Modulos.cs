@@ -12,6 +12,7 @@ namespace ProyectoFinal2
 {
     public partial class Modulos : Form
     {
+        
         //Patron Singleton
         private Modulos()
         {
@@ -39,9 +40,17 @@ namespace ProyectoFinal2
             
             
             Learn mLearn = Learn.getInstancia();
+            mLearn.btnSiguiente.Enabled = true;
+            mLearn.indice = 0;
+            mLearn.indice1 = 0;
+            mLearn.indice2 = 0;
+            mLearn.indice3 = 0;
             mLearn.txtValidacion.Text = TxtValidacion.Text;
+            
             mLearn.MdiParent = this;
             mLearn.Show();
+            
+            
 
             button1.Visible = false;
             button2.Visible = false;
@@ -52,6 +61,12 @@ namespace ProyectoFinal2
         {
             
             Write mWrite = Write.GetWrite();
+            mWrite.button1.Enabled = true;
+            mWrite.button1.Visible = true;
+            mWrite.button3.Visible = false;
+            
+            mWrite.indice = 0;
+            
             mWrite.MdiParent = this;
             mWrite.Show();
             button2.Visible = false;

@@ -26,7 +26,7 @@ namespace ProyectoFinal2
         public string res4d;
         public string res5e;
 
-        private int indice;
+        public int indice;
    //Patron Singleton
         private Write()
         {

@@ -43,10 +43,10 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(208, 218);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox1.Location = new System.Drawing.Point(156, 177);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(197, 22);
+            this.textBox1.Size = new System.Drawing.Size(149, 20);
             this.textBox1.TabIndex = 1;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -65,10 +65,10 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(487, 258);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button1.Location = new System.Drawing.Point(365, 210);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(97, 30);
+            this.button1.Size = new System.Drawing.Size(73, 24);
             this.button1.TabIndex = 3;
             this.button1.Text = "Next";
             this.button1.UseVisualStyleBackColor = true;
@@ -77,10 +77,10 @@
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.OrangeRed;
-            this.button2.Location = new System.Drawing.Point(15, 9);
-            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button2.Location = new System.Drawing.Point(11, 7);
+            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(97, 30);
+            this.button2.Size = new System.Drawing.Size(73, 24);
             this.button2.TabIndex = 4;
             this.button2.Text = "Modulos";
             this.button2.UseVisualStyleBackColor = false;
@@ -101,20 +101,20 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(205, 482);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox2.Location = new System.Drawing.Point(154, 392);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(197, 22);
+            this.textBox2.Size = new System.Drawing.Size(149, 20);
             this.textBox2.TabIndex = 5;
             this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.OrangeRed;
-            this.button3.Location = new System.Drawing.Point(487, 258);
-            this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button3.Location = new System.Drawing.Point(365, 209);
+            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(97, 30);
+            this.button3.Size = new System.Drawing.Size(73, 24);
             this.button3.TabIndex = 7;
             this.button3.Text = "answers";
             this.button3.UseVisualStyleBackColor = false;
@@ -126,9 +126,10 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.ImageIndex = 0;
             this.label2.ImageList = this.imageList2;
-            this.label2.Location = new System.Drawing.Point(204, 265);
+            this.label2.Location = new System.Drawing.Point(153, 215);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(200, 199);
+            this.label2.Size = new System.Drawing.Size(150, 162);
             this.label2.TabIndex = 6;
             // 
             // label1
@@ -136,18 +137,19 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.ImageIndex = 0;
             this.label1.ImageList = this.imageList1;
-            this.label1.Location = new System.Drawing.Point(207, 16);
+            this.label1.Location = new System.Drawing.Point(155, 13);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(200, 199);
+            this.label1.Size = new System.Drawing.Size(150, 162);
             this.label1.TabIndex = 2;
             // 
             // Write
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::ProyectoFinal2.Properties.Resources.fondo;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(609, 551);
+            this.ClientSize = new System.Drawing.Size(457, 448);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBox2);
@@ -157,7 +159,6 @@
             this.Controls.Add(this.textBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Write";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Write";
@@ -171,11 +172,11 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ImageList imageList2;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button button3;
+        public System.Windows.Forms.Button button1;
+        public System.Windows.Forms.Button button3;
     }
 }

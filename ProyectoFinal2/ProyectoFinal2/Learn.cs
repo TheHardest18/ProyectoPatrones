@@ -14,10 +14,10 @@ namespace ProyectoFinal2
 {
     public partial class Learn : Form
     {
-        private int indice;
-        private int indice1;
-        private int indice2;
-        private int indice3;
+        public int indice;
+        public int indice1;
+        public int indice2;
+        public int indice3;
         //Inicio de patron singleton
         private Learn()
         {
@@ -241,6 +241,8 @@ namespace ProyectoFinal2
         }
         private void btnSiguiente_Click(object sender, EventArgs e)
         {
+            
+
             indice++;
             indice1++;
             indice2++;
@@ -253,10 +255,14 @@ namespace ProyectoFinal2
             listimg4.ImageIndex = indice3;
             if (indice == 7)
             {
+                Modulos md = Modulos.GetModulos();
+                
+                
                 MessageBox.Show("end of the lesson");
                 btnSiguiente.Enabled = false;
 
             }
+            
             
 
 
