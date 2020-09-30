@@ -274,8 +274,6 @@ namespace ProyectoFinal2
             if (indice >= 1)
             {
                 indice--;
-               
-                
 
             }
             if (indice1 >= 1)
